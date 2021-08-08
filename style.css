@@ -1,0 +1,147 @@
+/* poppins font  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',
+        sans-serif;
+    font-weight: normal;
+
+}
+
+/*
+==========
+ navbar 
+==========
+ */
+.navbar-background-color {
+    background-color: #264653;
+}
+
+.navbar .navbar-collapse .btn {
+    background-color: #E76F51;
+}
+
+.navbar .navbar-collapse .btn:hover {
+    background-color: #ee5a35;
+}
+
+.navbar-nav-link {
+    text-decoration: none;
+    /* padding: 1.2rem; */
+    margin: 1.2rem;
+    color: white;
+}
+
+.navbar-nav-link:hover {
+    color: #E76F51 !important;
+}
+
+/*
+==========
+Banner 
+==========
+ */
+
+.banner {
+    background-color: #264653;
+}
+
+.banner .banner-titles .btn {
+    background-color: #E76F51;
+}
+
+.banner .banner-titles .btn:hover {
+    background-color: #ee5a35;
+}
+
+/*
+==========
+Feature bikes
+==========
+ */
+.featured-bikes {
+    padding-top: 5em;
+
+}
+
+.featured-bikes-titles .title {
+    font-size: 3rem;
+
+}
+
+.featured-bikes-images div:first-child .bike-image,
+.featured-bikes-images div:last-child .bike-image {
+    filter: grayscale(100%);
+}
+
+/*
+==========
+latest news 
+==========
+ */
+
+.latest-news-title {
+    font-size: 3rem;
+    font-weight: 700;
+
+}
+
+.latest-news .card .btn {
+    border: 1px solid #E76F51;
+    color: #E76F51;
+}
+
+.latest-news .card .btn:hover {
+
+    background-color: #E76F51;
+    color: white;
+}
+
+.card-text {
+    color: #6C6C6C;
+}
+
+/*
+==========
+happy clients
+==========
+ */
+
+.happy-clients {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+.happy-clients .card>.stars .filled {
+    color: #E77C40;
+}
+
+.happy-clients .card>.stars .empty {
+    color: #d3d3d3;
+}
+
+.happy-clients .card>.client-name {
+    color: #23A6F0;
+}
+
+/*
+==========
+frequently-asked-qus
+==========
+ */
+
+.frequently-asked-qus .accordion .accordion-body {
+    color: #6C6C6C;
+}
+
+/* get-in-touch-form */
+
+.get-in-touch-form>div .btn {
+    background-color: #E76F51;
+}
+
+.get-in-touch-form>div .btn:hover {
+    background-color: #ee5a35;
+}

@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/feature-bike-removebg-preview.png" type="image/x-icon">
+    <title>Bike-Shop</title>
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- font awesome cdn -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header style="background-color: #264653;
+    height: 4em;">
+        <!-- navbar  -->
+        <nav class="navbar p-0 fixed-top  navbar-dark  navbar-background-color  navbar-expand-lg  container-fluid ">
+            <div class="container py-2">
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse flex-column flex-lg-row justify-content-center align-items-center"
+                    id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-lg-auto mb-2 mb-lg-0 me-lg-5 ">
+                        <li class="nav-item mb-4 mb-lg-0  me-lg-2 text-center">
+                            <a class="navbar-nav-link  fs-5" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item mb-4 mb-lg-0 me-lg-2 text-center">
+                            <a class="navbar-nav-link  fs-5" href="#featured-bikes">Feature</a>
+                        </li>
+                        <li class="nav-item mb-4 mb-lg-0 me-lg-2 text-center">
+                            <a class="navbar-nav-link  fs-5" aria-current="page" href="#happy-clients">Happy Clients</a>
+                        </li>
+                        <li class="nav-item mb-4 mb-lg-0 me-lg-2 text-center">
+                            <a class=" navbar-nav-link  fs-5" href="#footer">Contacts</a>
+                        </li>
+
+                    </ul>
+
+                    <div class="d-flex d-lg-block justify-content-center align-items-center mb-3 mb-lg-0">
+                        <a target="_blank" href="https://github.com/Zahin52"
+                            class="btn text-white py-2 px-5 fw-normal text-center" type="">Login
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="banner  h-auto  d-flex justify-content-center align-items-center ">
+            <div class="container row pt-4 pb-5">
+                <div class="banner-titles  col-12 col-md-6  d-flex justify-content-center align-items-center ">
+                    <div class="pt-3 pt-sm-2">
+                        <p class="fw-normal" style="color: #d3d3d3;">
+                            A single cylinder sport bike
+                        </p>
+                        <h1 class="fs-1 text-white fw-bold">
+                            Honda CBR 300R
+                        </h1>
+                        <p class="fw-normal" style="color: #d3d3d3;">
+                            It's the brand 99% biker loves. This why we are the best Motor-bike brand since 1985.
+                            Making motorcycles with the basic goal of bringing joy and satisfaction to people serves as
+                            the starting point of Honda. Honda will continue offering products which fulfill the needs
+                            of its customers around the world.
+                        </p>
+                        <a data-bs-toggle="modal" data-bs-target="#purchase" href=""
+                            class="btn text-white py-3 px-5 fw-normal">Purchase</a>
+
+                        <!-- modal  -->
+                        <div class="modal  fade" id="purchase" tabindex="-1" aria-labelledby="purchaseLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog  modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="purchaseLabel">Delivery Information</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="mb-3">
+                                                <label for="recipient-name" class="col-form-label">Email/Mobile:</label>
+                                                <input type="text" class="form-control" id="recipient-name">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="message-text" class="col-form-label">Home Address:</label>
+                                                <textarea class="form-control" id="message-text"></textarea>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Confirm</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="banner-image py-3 py-md-5 col-12 col-md-6  d-flex justify-content-center align-items-center ">
+                    <img class="img-fluid" src="./images/header-bike.png" alt="red bike">
+                </div>
+            </div>
+
+        </section>
+        <section id="featured-bikes" class="container featured-bikes mt-lg-5">
+            <div class="featured-bikes-titles text-center">
+                <h1 class="title text-capitalize fs-1">Featured Bikes 2021</h1>
+                <span class="text-capitalize text-danger ">Best bike collection</span>
+                <hr class="mx-auto bg-danger d-none d-md-block" style="width: 58px;">
+            </div>
+            <div class="row featured-bikes-images">
+                <div class="col-12 col-md-6 col-lg-4 p-5"><img class="img-fluid bike-image"
+                        src="./images/feature-bike.jpg">
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 p-5"><img class="img-fluid bike-image"
+                        src="./images/feature-bike.jpg"></div>
+                <div class="col-12 col-md-6 col-lg-4 p-5"><img class="img-fluid bike-image"
+                        src="./images/feature-bike.jpg"></div>
+            </div>
+
+        </section>
+        <section id="latest-news" class="latest-news container my-2 my-sm-5 pt-lg-5">
+            <h1 class="fs-1 latest-news-title text-center my-4 my-md-5 text-capitalize ">latest news</h1>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3  g-4">
+                <div class="col">
+                    <div class="card pb-0 rounded rounded-3 p-4">
+                        <img src="./images/bike-1.png" class="card-img-top" alt="...">
+                        <div class="card-body mt-3">
+                            <h5 class="card-title">Ducati XDIAVEL S-73</h5>
+                            <p class="card-text ">The new sports version, the Black Star, and the matt black total look
+                                version, the XDiavel Dark, further enhance the strengths of the XDiavel. </p>
+                            <a href="https://github.com/Zahin52" target="_blank" class="btn mt-4 ">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card pb-0 rounded rounded-3 p-4">
+                        <img src="./images/bike-2.png" class="card-img-top" alt="...">
+                        <div class="card-body mt-3">
+                            <h5 class="card-title">Motorcycles & Scooters</h5>
+                            <p class="card-text">We are glad to witness an overwhelming response for the machine that
+                                has always been a legend.Demang for bike is high in this time of the year.</p>
+                            <a target="_blank" href="https://github.com/Zahin52" class="btn mt-4 ">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card pb-0 rounded rounded-3 p-4">
+                        <img src="./images/bike-3.png" class="card-img-top" alt="...">
+                        <div class="card-body mt-3">
+                            <h5 class="card-title">2021 Honda CBR500R</h5>
+                            <p class="card-text">Is it any wonder why the Honda CBR500R is one of our most popular
+                                sportbikes? It just gets so many things right. Price. Power. Weight. Handling. </p>
+                            <a target="_blank" href="https://github.com/Zahin52" class="btn mt-4 ">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section id="happy-clients" class="happy-clients container pt-3 my-3 pt-sm-5 my-sm-5">
+            <h1 class="clients-title text-center fs-1 my-5 text-capitalize mt-5">Happy <span
+                    style="color:#E76F51;">Clients
+                    says</span></h1>
+
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100 p-4 text-center">
+                        <div class="card-image ">
+                            <img src="./images/user-1.png" class="rounded-circle w-75 card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+
+                            <p class="card-text">I Love Honda for its reliability and robust buid.I'm using my bike
+                                since 2016 and still it feels like new. </p>
+                        </div>
+                        <div class="stars mb-4">
+                            <span class="filled"><i class="fas fa-star"></i></span>
+                            <span class="filled"><i class="fas fa-star"></i></span>
+                            <span class="filled"><i class="fas fa-star"></i></span>
+                            <span class="filled"><i class="fas fa-star"></i></span>
+                            <span class="empty"><i class="fas fa-star"></i></span>
+                        </div>
+                        <p class="client-name">
+                            john cena
+                        </p>
+                        <p class="">
+                            Engineer
+                        </p>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 p-4 text-center ">
+                        <div class="card-image ">
+                            <img src="./images/user-2.png" class="rounded-circle w-75 card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+
+                            <p class="card-text">My father bought me one for my birthday 30 years ago.
+                                I still ride it without any problems. </p>
+                        </div>
+                        <div class="stars mb-4">
+                            <span class="filled"><i class="fas fa-star"></i></span>
+                            <span class="filled"><i class="fas fa-star"></i></span>
+                            <span class="filled"><i class="fas fa-star"></i></span>
+                            <span class="filled"><i class="fas fa-star"></i></span>
+                            <span class="empty"><i class="fas fa-star"></i></span>
+                        </div>
+                        <p class="client-name">
+                            Regina Miles
+                        </p>
+                        <p class="">
+                            Banker
+                        </p>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 p-4 text-center">
+                        <div class="card-image ">
+                            <img src="./images/user-3.jpg" class="rounded-circle w-75 card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+
+                            <p class="card-text">I just love it. It's fast and running smooth.Oil counsumtion is pretty
+                                low . Best brand ever</p>
+                        </div>
+                        <div class="stars mb-4">
+                            <span class="filled"><i class="fas fa-star"></i></span>
+                            <span class="filled"><i class="fas fa-star"></i></span>
+                            <span class="filled"><i class="fas fa-star"></i></span>
+                            <span class="filled"><i class="fas fa-star"></i></span>
+                            <span class="empty"><i class="fas fa-star"></i></span>
+                        </div>
+                        <p class="client-name">
+                            Billie Eilish
+                        </p>
+                        <p class="">
+                            Entrepreneur
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section id="frequently-asked-qus" class="frequently-asked-qus  container my-3 my-sm-5">
+            <h1 class="title text-capitalize text-center my-5 pt-lg-5">Frequently Asked <span
+                    style="color: #E76F51;">Questions</span></h1>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 justify-content-center align-items-center">
+                <div class="col">
+                    <img class="img-fluid" src="./images/faq.png" alt="">
+                </div>
+                <div class="col">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item my-4 border ">
+                            <h2 class="accordion-header p-2" id="headingOne">
+                                <button class="accordion-button bg-transparent shadow-none " type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                    aria-controls="collapseOne">
+                                    What are the most important things I should
+                                    know about riding a bike?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Safety First! Always obey the rules of the road. Obey all traffic signals, signs,
+                                    and
+                                    laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This
+                                    will help you be a more focused and legally compliant bike rider.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item my-4 border">
+                            <h2 class="accordion-header p-2" id="headingTwo">
+                                <button class="accordion-button bg-transparent shadow-none collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo">
+                                    How can I tell if my helmet is old and I need a
+                                    new one?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Usually, it is not the outside shell that deteriorates first. It is typically the
+                                    lining and foam inside of the helmet. If the inside of your helmet starts to flake
+                                    off into your hair or onto your shoulders, that is a good sign you need a helmet
+                                    replacement.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item my-4 border">
+                            <h2 class="accordion-header p-2" id="headingThree">
+                                <button class="accordion-button bg-transparent shadow-none collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree">
+                                    My bike has been in storage is it safe to ride?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Check the tires. They may need replacement due to being left alone for some period
+                                    of
+                                    time. Inflate them to listed pressure and check the sidewalls for cracks or bulges.
+                                    Check the rim brakes too, the brake pads may very well be hard and in need of
+                                    replacing.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item my-4 border">
+                            <h2 class="accordion-header p-2" id="headingFour">
+                                <button class="accordion-button bg-transparent shadow-none collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                                    aria-controls="collapseFour">
+                                    What rules should I follow when riding my bike?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>Always Wear a DOT-Approved Helmet.</li>
+                                        <li>Use Appropriate Lights and Light Signals.</li>
+                                        <li>Don't Swerve, Just Do a Slow Curve.</li>
+                                        <li>Wear Proper Motorcycle Riding Attire.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section id="our-collection-carousel" class="top-sell-carousel container  py-3 my-3 py-sm-5 my-sm-5">
+            <div class="my-5">
+                <h1 class="text-center text-capitalize">Our <span style="color: #E76F51;">collection</span> </h1>
+            </div>
+            <div id="carouselExampleControls" class="carousel slide p-5" data-bs-ride="carousel"
+                style="background-color:#2646539b">
+                <div class="carousel-inner text-white">
+                    <div class="carousel-item active ">
+                        <div class="row  justify-content-around align-items-center">
+                            <div class="col-12 col-sm-12 col-md-6 text-center">
+                                <h1 class="fs-1">Honda D-R15</h1>
+                                <p class="fs-6">
+                                    CB150R ExMotion is a new innovation surprise from the Japanese motorcycle
+                                    manufacturer Honda. It's a wonderful motorcycle that combines a powerful
+                                    water-cooled
+                                    engines.
+                                </p>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6 text-center">
+                                <img src="./images/carousel-1-removebg-preview.png" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row  justify-content-around align-items-center">
+                            <div class="col-12 col-sm-12 col-md-6 text-center">
+                                <h1 class="fs-1">Honda CBR150R </h1>
+                                <p class="fs-6">
+                                    The CBR150R is one of the stylish latest super bikes of Honda. Including its
+                                    outstanding features like - sporty look and wonderful color combination along with
+                                    liquid-cooled powerful engine with fuel injection.
+                                </p>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6 text-center">
+                                <img src="./images/carousel-2-removebg-preview.png" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row  justify-content-around align-items-center">
+                            <div class="col-12 col-sm-12 col-md-6  text-center">
+                                <h1 class="fs-1">Honda X Blade</h1>
+                                <p class="fs-6">
+                                    The Honda X-Blade 160 cc naked sporty bike has launched in Bangladesh. But this time
+                                    not ABS edition, BHL Launched standard edition of Honda X Blade in Bangladesh.A very
+                                    powerfull bike on the road
+                                </p>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6 text-center">
+                                <img src="./images/carousel-3-removebg-preview.png" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="get-in-touch" style="background-color: #171a2a;">
+            <div class="container pt-2 pt-md-4">
+                <div class="text-center text-capitalize ">
+                    <h1 class="fw-bold text-white my-4">
+                        Get <span style="color: #E76F51;">in touch</span>
+                    </h1>
+                </div>
+                <div class="row">
+                    <div class="get-in-touch-image col-12 col-sm-6">
+                        <img class="img-fluid" src="./images/touch-removebg-preview.png" alt="">
+                    </div>
+                    <div class="get-in-touch-form col-12 col-sm-6 d-flex justify-content-center align-items-center">
+                        <div class="w-100">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label text-white">Email
+                                    address</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="name@example.com">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label text-white">Your
+                                    Feedback</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <a href="#" class="btn  px-4 py-2">Submit</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+    <footer id="footer" class="py-5 px-4" style="background-color: #0B0D17;">
+        <div class="container-sm d-md-flex justify-content-between align-items-center">
+            <div class=" text-white ">
+                <div class="mb-3">
+                    <a class="text-decoration-none text-white" href="https://github.com/Zahin52" target="_blank"
+                        rel="noopener noreferrer">
+                        <span class="text-capitalize me-3">Download Now</span>
+                    </a>
+                    <a class="text-decoration-none text-white" href="https://github.com/Zahin52" target="_blank"
+                        rel="noopener noreferrer">
+                        <span class="text-capitalize">License</span>
+                    </a>
+
+
+                </div>
+                <div class="d-block d-sm-flex mb-3">
+                    <div class="mb-2">
+                        <a class="text-decoration-none text-white" href="https://github.com/Zahin52" target="_blank"
+                            rel="noopener noreferrer">
+                            <span class="me-3 text-capitalize">About</span>
+                        </a>
+                        <a class="text-decoration-none text-white" href="https://github.com/Zahin52" target="_blank"
+                            rel="noopener noreferrer">
+                            <span class="me-3 text-capitalize">Feature</span>
+                        </a>
+                        <a class="text-decoration-none text-white" href="https://github.com/Zahin52" target="_blank"
+                            rel="noopener noreferrer">
+                            <span class="me-3 text-capitalize">pricing</span>
+                        </a>
+
+                    </div>
+                    <div class="mb-2">
+                        <a class="text-decoration-none text-white" href="https://github.com/Zahin52" target="_blank"
+                            rel="noopener noreferrer">
+                            <span class="me-3 text-capitalize">help</span>
+                        </a>
+                        <a class="text-decoration-none text-white" href="https://github.com/Zahin52" target="_blank"
+                            rel="noopener noreferrer">
+                            <span class="me-3 text-capitalize">privacy policy</span>
+                        </a>
+                        <a class="text-decoration-none text-white" href="https://github.com/Zahin52" target="_blank"
+                            rel="noopener noreferrer">
+                            <span class="me-3 text-capitalize">Careers</span>
+                        </a>
+
+                    </div>
+                </div>
+                <span class="text-white d-none d-sm-block " style="font-size: .855rem;">&copy;2020 bike.All rights
+                    reserved</span>
+            </div>
+            <div class="me-md-5 my-5">
+                <p class="text-capitalize text-white fs-4">Get the app</p>
+                <div class="">
+                    <div class="">
+                        <a href="https://github.com/Zahin52" target="_blank" rel="noopener noreferrer">
+                            <img class="img-fluid my-2" src="./images/App Store Badge.png" alt="app store">
+                        </a>
+                    </div>
+                    <div class="">
+                        <a href="https://github.com/Zahin52" target="_blank" rel="noopener noreferrer">
+                            <img class="img-fluid my-2" src="./images/Google Play Badge.png" alt="play store">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="container text-center d-md-none">
+            <span class="text-white " style="font-size: .8rem;">&copy;2020 bike.All rights reserved</span>
+        </div>
+    </footer>
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
